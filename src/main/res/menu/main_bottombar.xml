@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/organicnatural"
+        android:title="Organic" />
+    <item
+        android:id="@+id/bottom_Notification"
+        android:icon="@drawable/onorganic"
+        android:title="In-Organic" />
+    <item
+        android:id="@+id/bottom_Account"
+        android:icon="@drawable/flowersicon"
+        android:title="Flowers" />
+    <item
+        android:id="@+id/bottom_rice"
+        android:icon="@drawable/riceicon"
+        android:title="Rice" />
+    <item
+        android:id="@+id/bottom_fruits"
+        android:icon="@drawable/fruits"
+        android:title="Friuts" />
+</menu>

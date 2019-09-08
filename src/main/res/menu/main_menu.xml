@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/action_settingbtn"
+        android:title="Account Setting" />
+    <item
+        android:id="@+id/action_logoutbtn"
+        android:title="Logout" />
+    <item
+        android:id="@+id/CartOption"
+        android:title="Basket"
+        android:icon="@drawable/basketicon"
+        app:showAsAction="always"
+        />
+
+    <item android:title="Terms and Conditions"
+        android:id="@+id/Term"/>
+    <item android:title="Privacy Policy"
+        android:id="@+id/Privacy"/>
+    <item android:title="Cancellation/Refund Policies"
+        android:id="@+id/refund"/>
+    <item android:title="Contact US"
+        android:id="@+id/contantus"/>
+    <item android:title="About Us"
+        android:id="@+id/Aboutus"/>
+    <item android:title="Orders"
+        android:id="@+id/Ordersop"/>
+    <item
+        android:id="@+id/menu_item_share"
+        android:title="Share"
+        android:icon="@drawable/shareicon"
+        app:showAsAction="always"
+        />
+</menu>

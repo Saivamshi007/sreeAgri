@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetupActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/setupToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </android.support.v7.widget.Toolbar>
+<ScrollView
+    android:layout_marginBottom="30dp"
+    app:layout_constraintTop_toBottomOf="@+id/setupToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constrane"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/setup_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="148dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/pdef"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.564"
+            app:layout_constraintStart_toStartOf="parent"
+             />
+
+        <EditText
+
+        android:id="@+id/setup_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Enter Your Name"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setup_image" />
+
+    <EditText
+        android:id="@+id/Rcontactnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:hint="Enter contact nuber"
+        android:inputType="number"
+        android:layout_marginStart="8dp"
+        android:padding="15dp"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/setup_name"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/Rhousename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter house Name"
+        android:layout_marginEnd="8dp"
+        android:padding="15dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/Rcontactnumber" />
+
+    <EditText
+        android:id="@+id/RhouseNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:padding="15dp"
+        android:textSize="18dp"
+        android:hint="Enter House Number"
+        app:layout_constraintTop_toBottomOf="@+id/Rhousename"
+        tools:layout_editor_absoluteX="0dp" />
+
+        <EditText
+            android:id="@+id/RColonyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Colony Name"
+            android:layout_marginEnd="8dp"
+            android:padding="15dp"
+            android:layout_marginStart="8dp"
+            android:textSize="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/RhouseNo" />
+
+        <EditText
+            android:id="@+id/RStreetname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:hint="Enter Street Name"
+            android:padding="15dp"
+            android:layout_marginStart="8dp"
+            android:textSize="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/RColonyName" />
+
+        <EditText
+            android:id="@+id/Rcityedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter City Name"
+            android:layout_marginEnd="8dp"
+            android:padding="15dp"
+            android:layout_marginStart="8dp"
+            android:textSize="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/RStreetname"
+             />
+
+        <EditText
+            android:id="@+id/Rpincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:hint="Enter Pin Code"
+            android:inputType="number"
+            android:padding="15dp"
+            android:layout_marginStart="8dp"
+            android:textSize="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/Rcityedit"
+
+            />
+
+        <EditText
+            android:id="@+id/Rlandmark"
+            android:hint="Enter LandMark"
+            android:padding="15dp"
+            android:layout_marginStart="8dp"
+            android:textSize="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/Rpincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <Button
+            android:id="@+id/setup_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/colorAccent"
+            android:padding="15dp"
+            android:text="Save Account Settings"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Rlandmark"
+
+             />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
+    <ProgressBar
+        android:id="@+id/setup_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setupToolbar" />
+
+
+</android.support.constraint.ConstraintLayout>
